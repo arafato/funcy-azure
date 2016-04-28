@@ -1,0 +1,34 @@
+{
+	"invocationId": "732bb619-dc67-459a-a846-2577c699290a",
+	"bindings": {
+		"req": {
+			"originalUrl": "https://funcy-azure.azurewebsites.net/api/HttpNode?code=v7mvbnialq9cbjp9ingv3rf6ro6jeqappb5h1caw06ls1yvioy7lzciq83881sx64eokr19k9",
+			"method": "GET",
+			"query": {
+			},
+			"headers": {
+				"connection": "Keep-Alive",
+				"accept": "text/html",
+				"accept-encoding": "gzip",
+				"accept-language": "en-GB",
+				"cookie": "ARRAffinity=ba5d76ec6cff777d9272df6eac68c0164a41f09d2bcf4432a63c0a4f364e8e14",
+				"host": "funcy-azure.azurewebsites.net",
+				"max-forwards": "10",
+				"user-agent": "Mozilla/5.0",
+				"upgrade-insecure-requests": "1",
+				"x-liveupgrade": "1",
+				"x-arr-log-id": "3cf1f5cc-f2df-4369-ae22-b295de149a7d",
+				"disguised-host": "playground-arafato.azurewebsites.net",
+				"x-site-deployment-id": "playground-arafato",
+				"x-original-url": "/api/HttpNode?code=v7mvbnialq9cbjp9ingv3rf6ro6jeqappb5h1caw06ls1yvioy7lzciq83881sx64eokr19k9&name=olli",
+				"x-forwarded-for": "217.254.142.232:43544",
+				"x-arr-ssl": "2048|256|C=US, S=Washington, L=Redmond, O=Microsoft Corporation, OU=Microsoft IT, CN=Microsoft IT SSL SHA2|CN=*.azurewebsites.net"
+			},
+			"body": {
+			}
+		}
+	},
+	"bindingData": {
+		"InvocationId": "732bb619-dc67-459a-a846-2577c699290a"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"invocationId": "299cbb40-65cb-4d7b-b6a1-3a4f2f995392",
+	"bindings": {
+		"myTimer": {
+			"isPastDue": true,
+			"last": "2016-04-27T11:03:00",
+			"next": "2016-04-27T11:03:01"
+		}
+	},
+	"bindingData": {
+		"TimerTrigger": "4/27/2016 12:11:23 PM",
+		"InvocationId": "299cbb40-65cb-4d7b-b6a1-3a4f2f995392"
+	}
+}

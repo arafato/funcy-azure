@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+
+'use strict'
+
+let argv = require('minimist')(process.argv.slice(2));
+
+let F = require('../lib/Funcy'),
+	funcyAzure = new F();
+	
+funcyAzure.init()
+	.then(function() {
+		funcyAzure.command(argv);
+	});
+	

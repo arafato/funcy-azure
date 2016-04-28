@@ -1,0 +1,10 @@
+{
+	"invocationId": "00fa29e9-4848-48e1-9ef7-1e3cd05fee80",
+	"bindings": {
+		"myBlob": "Blob content"
+	},
+	"bindingData": {
+		"BlobTrigger": "container/file.txt",
+		"InvocationId": "00fa29e9-4848-48e1-9ef7-1e3cd05fee80"
+	}
+}

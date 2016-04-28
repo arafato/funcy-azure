@@ -1,0 +1,28 @@
+{
+  "name": "funcy-azure",
+  "version": "0.1.0",
+  "description": "CLI to facilitate structuring, development and testing of Azure Functions code",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Azure",
+    "Azure Functions",
+    "Serverless",
+    "Microsoft",
+    "Testing"
+  ],
+  "main": "lib/Funcy.js",
+  "bin": {
+    "funcy": "./bin/funcy-azure",
+    "fa": "./bin/funcy-azure"
+  },
+  "author": "Oliver Arafat",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.3.5",
+    "chalk": "^1.1.3",
+    "merge": "^1.2.0",
+    "minimist": "^1.2.0"
+  }
+}
