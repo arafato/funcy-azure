@@ -1,0 +1,9 @@
+{
+	"bindings": {
+		"req": {
+			"query": {
+				"name": "Azure"
+			}
+		}
+	}
+}
