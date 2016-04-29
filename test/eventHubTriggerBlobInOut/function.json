@@ -1,0 +1,26 @@
+{
+  "bindings": [
+    {
+      "path": "upload/{id}",
+      "connection": "playgroundarafato_STORAGE",
+      "name": "outputBlob",
+      "type": "blob",
+      "direction": "out"
+    },
+    {
+      "name": "myEventHubMessage",
+      "type": "eventHubTrigger",
+      "path": "playground",
+      "connection": "SendListen",
+      "direction": "in"
+    },
+    {
+      "name": "inputBlob",
+      "type": "blob",
+      "path": "upload/{id}",
+      "connection": "playgroundarafato_STORAGE",
+      "direction": "in"
+    }
+  ],
+  "disabled": false
+}

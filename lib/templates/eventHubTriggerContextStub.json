@@ -1,15 +1,9 @@
 {
 	"invocationId": "c057d2ff-a547-4ac8-b49f-29674f2a79bf",
 	"bindings": {
-		"myEventHubTrigger": {
-			"Temperature": 42.2,
-			"Pressure": 23.7
-		}
 	},
 	"bindingData": {
 		"partitionContext": "Microsoft.ServiceBus.Messaging.PartitionContext",
-		"Temperature": "42.2",
-		"Pressure": "23.7",
 		"InvocationId": "c057d2ff-a547-4ac8-b49f-29674f2a79bf"
 	}
 }

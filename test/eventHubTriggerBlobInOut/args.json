@@ -1,0 +1,10 @@
+{
+	"bindings": {
+		"myEventHubMessage": {
+			"id": "id42",
+			"Temperature": 42.2,
+			"Pressure": 23.7
+		},
+		"inputBlob": "Blob Content"
+	}
+}
