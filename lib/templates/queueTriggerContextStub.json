@@ -1,0 +1,13 @@
+{
+	"invocationId": "0766e729-0fe4-4ad0-bb29-945e80e09a72",
+	"bindings": {
+	},
+	"bindingData": {
+		"QueueTrigger": "sample queue data",
+		"DequeueCount": "0",
+		"ExpirationTime": "12/31/9999 11:59:59 PM +00:00",
+		"InsertionTime": "4/30/2016 6:27:08 PM +00:00",
+		"NextVisibleTime": "12/31/9999 11:59:59 PM +00:00",
+		"InvocationId": "0766e729-0fe4-4ad0-bb29-945e80e09a72"
+	}
+}
