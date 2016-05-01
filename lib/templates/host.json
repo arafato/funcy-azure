@@ -1,0 +1,46 @@
+{
+    // The unique ID for this job host. Can be a lower case GUID
+    // with dashes removed (Required)
+    "id": "9f4ea53c5136457d883d685e57164f08",
+    // Configuration settings for 'queue' triggers. (Optional)
+    "queues": {
+      // The maximum interval in milliseconds between
+      // queue polls. The default is 1 minute.
+      "maxPollingInterval": 2000,
+      // The number of queue messages to retrieve and process in
+      // parallel (per job function). The default is 16.
+      "batchSize": 16,
+      // The number of times to try processing a message before
+      // moving it to the poison queue. The default is 5
+      "maxDequeueCount": 5,
+      // The threshold at which a new batch of messages will be fetched.
+      // The default is batchSize/2.
+      "newBatchThreshold": 8
+    },
+    // Configuration settings for 'serviceBus' triggers. (Optional)
+    "serviceBus": {
+      // The maximum number of concurrent calls to the callback the message
+      // pump should initiate. The default is 16.
+      "maxConcurrentCalls": 16
+    },
+    // Configuration settings for logging/tracing behavior. (Optional)
+    "tracing": {
+      // The tracing level used for console logging.
+      // The default is 'Info'. Options are: { Off, Error, Warning, Info, Verbose }
+      "consoleLevel": "Verbose"
+    },
+    // Configuration settings for Singleton lock behavior. (Optional)
+    "singleton": {
+      // The period that function level locks are taken for (they will auto renew)
+      "lockPeriod": "00:00:15",
+      // The period that listener locks are taken for
+      "listenerLockPeriod": "00:01:00",
+      // The time interval used for listener lock recovery if a listener lock
+      // couldn't be acquired on startup
+      "listenerLockRecoveryPollingInterval": "00:01:00",
+      // The maximum amount of time the runtime will try to acquire a lock
+      "lockAcquisitionTimeout": "00:01:00",
+      // The interval between lock acquisition attempts
+      "lockAcquisitionPollingInterval": "00:00:03"
+    }
+}
