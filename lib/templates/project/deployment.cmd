@@ -1,0 +1,3 @@
+echo [Funcy Azure] Installing Node.js dependencies...
+cd ..\wwwroot\lib
+call npm install
