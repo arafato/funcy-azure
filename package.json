@@ -15,7 +15,7 @@
   "main": "lib/Funcy.js",
   "bin": {
     "funcy": "./bin/funcy-azure",
-    "fa": "./bin/funcy-azure"
+    "faz": "./bin/funcy-azure"
   },
   "author": "Oliver Arafat",
   "license": "MIT",
