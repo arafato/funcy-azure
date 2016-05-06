@@ -31,7 +31,7 @@ Run and test locally on your machine (or type `--help` for available options)
 ```
 faz function run --file MyFunction/index.js
 ```
-To get an overview of all available commands and options simply type `funcy-azure --help`
+To get an overview of all available commands and options simply type `faz --help`
 
 ##Notes
 * This project is in a very early state so please expect a lot of (breaking) changes and additional features in the near future. 
