@@ -20,16 +20,16 @@ npm install funcy-azure -g
 ```
 Create a new project (or type `--help` for available options)
 ```
-funcy-azure project create --name MyNewProject
+faz project create --name MyNewProject
 ```
 And add a new http triggered function (or type `--help` for available options)
 ```
 cd MyNewProject
-funcy-azure function create --name MyFunction --event http
+faz function create --name MyFunction --event http
 ```
 Run and test locally on your machine (or type `--help` for available options)
 ```
-funcy-azure function run --file MyFunction/index.js
+faz function run --file MyFunction/index.js
 ```
 To get an overview of all available commands and options simply type `funcy-azure --help`
 
