@@ -25,7 +25,7 @@ funcy-azure project create --name MyNewProject
 And add a new http triggered function (or type `--help` for available options)
 ```
 cd MyNewProject
-funcy-azure function create --name MyFunction -- event http
+funcy-azure function create --name MyFunction --event http
 ```
 Run and test locally on your machine (or type `--help` for available options)
 ```
