@@ -12,7 +12,6 @@
     "type": "git",
     "url": "https://github.com/arafato/funcy-azure.git"
   },
-  "readme": "README.md",
   "preferGlobal": true,
   "keywords": [
     "Azure",
