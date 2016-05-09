@@ -34,3 +34,4 @@ node_modules
 
 # Funcy Azure
 .env
+admin.env
