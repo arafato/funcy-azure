@@ -33,5 +33,6 @@ node_modules
 .node_repl_history
 
 # Funcy Azure
-.env
+local.env
+cloud.env
 admin.env
