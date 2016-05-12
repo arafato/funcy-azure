@@ -45,11 +45,11 @@
 			"properties": {
 				"name": "[parameters('fazProjectName')]",
 				"hostNames": [
-					"func5test-arafato.azurewebsites.net"
+					"[concat(parameters('fazProjectName'),'.azurewebsites.net')]"
 				],
 				"enabledHostNames": [
-					"func5test-arafato.azurewebsites.net",
-					"func5test-arafato.scm.azurewebsites.net"
+					"[concat(parameters('fazProjectName'),'.azurewebsites.net')]",
+					"[concat(parameters('fazProjectName'),'.scm.azurewebsites.net')]"
 				],
 				"hostNameSslStates": [
 					{
