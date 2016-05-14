@@ -25,54 +25,107 @@
 <p><a href="https://badge.fury.io/js/funcy-azure"><img src="https://badge.fury.io/js/funcy-azure.svg" alt="npm version"></a>
 <a href=""><img src="https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000" alt="license"></a></p>
 
+<p><img src="https://azurenewsexplorer.blob.core.windows.net/funcyazure/funcyazure-logo.png" alt="alt text"></p>
+
 <p>Funcy Azure is the application framework for building web, 
 mobile, IoT and event-based applications on <a href="https://functions.azure.com">Azure Functions</a>. 
-It is a command line interface that helps you structure, build and test
-Azure Functions based applications. Functionality is also extensible via Plugins.</p>
+It is a command line interface that helps you structure, build, test and deploy 
+applications built with Azure Functions. Functionality is also extensible via Plugins.</p>
+
+<h2>
+<a id="table-of-contents" class="anchor" href="#table-of-contents" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Table of Contents</h2>
+
+<ul>
+<li><a href="#features">Features</a></li>
+<li><a href="#quickstart">Quickstart</a></li>
+<li><a href="#example">Example</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#notes">Notes</a></li>
+</ul>
 
 <h2>
 <a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h2>
 
 <ul>
-<li>Run/test Azure Functions locally on your machine</li>
+<li>Run and test Azure Functions (Node.js) locally on your machine</li>
+<li>Automated provisioning of your project resources to Azure</li>
+<li>Configurable continuous integration support with Git</li>
+<li>Automatic installation of your Node packages (as defined in package.json) upon deployment<br>
+</li>
 <li>Project scaffolding</li>
 <li>Function scaffolding</li>
 <li>100% extensible - Extend the framework and its operations via plugins. </li>
 </ul>
 
 <h2>
-<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting started</h2>
+<a id="quickstart" class="anchor" href="#quickstart" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Quickstart</h2>
 
 <p>Install the Funcy Azure framework via npm: (requires Node V4)</p>
 
 <pre><code>npm install funcy-azure -g
 </code></pre>
 
-<p>Create a new project (or type <code>--help</code> for available options)</p>
+<p>Create a new project (type <code>--help</code> for available options)</p>
 
 <pre><code>faz project create --name MyNewProject
 </code></pre>
 
-<p>And add a new http triggered function (or type <code>--help</code> for available options)</p>
+<p>Add a new http triggered function (type <code>--help</code> for available options)</p>
 
 <pre><code>cd MyNewProject
 faz function create --name MyFunction --event http
 </code></pre>
 
-<p>Run and test locally on your machine (or type <code>--help</code> for available options)</p>
+<p>Run and test locally on your machine (type <code>--help</code> for available options)</p>
 
 <pre><code>faz function run --file MyFunction/index.js
 </code></pre>
 
+<p>Provisioning of resources to Azure (type --help for available options)</p>
+
+<pre><code>faz project provision 
+</code></pre>
+
 <p>To get an overview of all available commands and options simply type <code>faz --help</code></p>
+
+<h2>
+<a id="example" class="anchor" href="#example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example</h2>
+
+<p>Here comes a more elaborate example including how to configure Azure (Service Principal).</p>
+
+<h2>
+<a id="documentation" class="anchor" href="#documentation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Documentation</h2>
+
+<h3>
+<a id="project-structure" class="anchor" href="#project-structure" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project Structure</h3>
+
+<p>Coming soon!</p>
+
+<h3>
+<a id="project-configuration" class="anchor" href="#project-configuration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project Configuration</h3>
+
+<p>Coming soon!</p>
+
+<h3>
+<a id="function-configuration" class="anchor" href="#function-configuration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Function Configuration</h3>
+
+<p>Coming soon!</p>
+
+<h3>
+<a id="provisioning" class="anchor" href="#provisioning" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Provisioning</h3>
+
+<p>Coming soon! </p>
+
+<h3>
+<a id="continuous-integration-and-deployment" class="anchor" href="#continuous-integration-and-deployment" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Continuous Integration and Deployment</h3>
+
+<p>Coming soon!</p>
 
 <h2>
 <a id="notes" class="anchor" href="#notes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Notes</h2>
 
 <ul>
 <li>This project is in a very early state so please expect a lot of (breaking) changes and additional features in the near future. </li>
-<li>Azure Function App creation still needs to be done manually through the portal. We are
-working on it, though, to integrate this functionality as well.</li>
 </ul>
 
       <footer class="site-footer">
