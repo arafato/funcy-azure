@@ -10,11 +10,11 @@ It is a command line interface that helps you structure, build, test and deploy
 applications built with Azure Functions. Functionality is also extensible via Plugins.
 
 ##Table of Contents
-* [Features](#features)
-* [Quick Start](#quickstart)
-* [Example](#example)
-* [Documentation](#documentation)
-* [Notes](#notes)
+* <a href="#features">Features</a>
+* <a href="#quickstart">Quick Start</a>
+* <a href="#example">Example</a>
+* <a href="#documentation">Documentation</a>
+* <a href="#notes">Notes</a>
 
 <a name="features"/>
 ##Features
