@@ -52,7 +52,6 @@ To get an overview of all available commands and options simply type `faz --help
 ##Example
 Here comes a more elaborate example including how to configure Azure (Service Principal).
 
-<a name="documentation"/>
 ##Documentation
 ###Project Structure
 Coming soon!
