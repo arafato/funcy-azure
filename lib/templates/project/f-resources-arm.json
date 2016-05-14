@@ -10,6 +10,13 @@
 		},
 		"fazProjectName": {
 			"type": "string"
+		},
+		"repoUrl": {
+			"type": "string"
+		},
+		"branch": {
+			"type": "string",
+			"defaultValue": "master"
 		}
 	},
 	"variables": {},
@@ -83,6 +90,19 @@
 						"AppSettingKey2": "My second setting",
 						"AppSettingKey3": "My third setting",
 						"AppSettingKey4": "My fourth setting"
+					}
+				},
+				{
+					"apiVersion": "2015-08-01",
+					"name": "web",
+					"type": "sourcecontrols",
+					"dependsOn": [
+						"[resourceId('Microsoft.Web/Sites', parameters('fazProjectName'))]"
+					],
+					"properties": {
+						"RepoUrl":"[parameters('repoUrl')]",
+						"branch": "[parameters('branch')]",
+						"IsManualIntegration": true 
 					}
 				}
 			]
