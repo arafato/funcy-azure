@@ -10,11 +10,11 @@ It is a command line interface that helps you structure, build, test and deploy
 applications built with Azure Functions. Functionality is also extensible via Plugins.
 
 ##Table of Contents
-* [Features](#Features)
-* [Quickstart](#Quickstart)
-* [Example](#Example)
-* [Documentation](#Documentation)
-* [Notes](#Notes)
+* [Features](#features)
+* [Quickstart](#quickstart)
+* [Example](#example)
+* [Documentation](#documentation)
+* [Notes](#notes)
 
 ##Features
 * Run and test Azure Functions (Node.js) locally on your machine
