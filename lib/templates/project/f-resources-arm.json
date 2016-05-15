@@ -14,6 +14,9 @@
 		"repoUrl": {
 			"type": "string"
 		},
+		"containerSize": {
+			"type": "int"
+		},
 		"branch": {
 			"type": "string",
 			"defaultValue": "master"
@@ -72,7 +75,7 @@
 					}
 				],
 				"serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('serverfarmsName'))]",
-				"containerSize": 128
+				"containerSize": "[parameters('containerSize')]"
 			},
 			"dependsOn": [
 				"[resourceId('Microsoft.Web/serverfarms', parameters('serverfarmsName'))]"
