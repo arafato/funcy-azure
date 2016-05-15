@@ -11,12 +11,11 @@ applications built with Azure Functions. Functionality is also extensible via Pl
 
 ##Table of Contents
 * [Features](#features)
-* [Quick Start](#quickstart)
+* [Quickstart](#quickstart)
 * [Example](#example)
 * [Documentation](#documentation)
 * [Notes](#notes)
 
-<a name="features"/>
 ##Features
 * Run and test Azure Functions (Node.js) locally on your machine
 * Automated provisioning of your project resources to Azure
@@ -26,8 +25,7 @@ applications built with Azure Functions. Functionality is also extensible via Pl
 * Function scaffolding
 * 100% extensible - Extend the framework and its operations via plugins. 
 
-<a name="quickstart"/>
-##Getting started
+##Quickstart
 Install the Funcy Azure framework via npm: (requires Node V4)
 ```
 npm install funcy-azure -g
@@ -51,11 +49,9 @@ faz project provision
 ```
 To get an overview of all available commands and options simply type `faz --help`
 
-<a name="example"/>
 ##Example
 Here comes a more elaborate example including how to configure Azure (Service Principal).
 
-<a name="documentation"/>
 ##Documentation
 ###Project Structure
 Coming soon!
@@ -68,6 +64,5 @@ Coming soon!
 ###Continuous Integration and Deployment
 Coming soon!
 
-<a name="notes"/>
 ##Notes
 * This project is in a very early state so please expect a lot of (breaking) changes and additional features in the near future. 
