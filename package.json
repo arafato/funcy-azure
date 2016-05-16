@@ -35,6 +35,7 @@
     "fs-extra": "^0.30.0",
     "merge": "^1.2.0",
     "minimist": "^1.2.0",
-    "ms-rest-azure": "^1.12.0"
+    "ms-rest-azure": "^1.12.0",
+    "request-promise": "^3.0.0"
   }
 }
