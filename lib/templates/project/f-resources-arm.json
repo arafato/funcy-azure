@@ -14,6 +14,9 @@
 		"allowedOrigins": {
 			"type": "array"
 		},
+		"envVars": {
+			"type": "object"
+		},
 		"repoUrl": {
 			"type": "string"
 		},
@@ -91,12 +94,7 @@
 					"dependsOn": [
 						"[resourceId('Microsoft.Web/Sites', parameters('fazProjectName'))]"
 					],
-					"properties": {
-						"AppSettingKey1": "Some value",
-						"AppSettingKey2": "My second setting",
-						"AppSettingKey3": "My third setting",
-						"AppSettingKey4": "My fourth setting"
-					}
+					"properties": "[parameters('envVars')]"
 				},
 				{
 					"apiVersion": "2015-08-01",
