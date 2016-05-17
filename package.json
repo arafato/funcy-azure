@@ -1,6 +1,6 @@
 {
   "name": "funcy-azure",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "CLI to facilitate structuring, development and testing of Azure Functions code",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
