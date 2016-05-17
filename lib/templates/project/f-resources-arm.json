@@ -11,6 +11,9 @@
 		"fazProjectName": {
 			"type": "string"
 		},
+		"allowedOrigins": {
+			"type": "array"
+		},
 		"repoUrl": {
 			"type": "string"
 		},
@@ -103,9 +106,22 @@
 						"[resourceId('Microsoft.Web/Sites', parameters('fazProjectName'))]"
 					],
 					"properties": {
-						"RepoUrl":"[parameters('repoUrl')]",
+						"RepoUrl": "[parameters('repoUrl')]",
 						"branch": "[parameters('branch')]",
-						"IsManualIntegration": true 
+						"IsManualIntegration": true
+					}
+				},
+				{
+					"apiVersion": "2015-08-01",
+					"name": "web",
+					"type": "config",
+					"dependsOn": [
+						"[resourceId('Microsoft.Web/Sites', parameters('fazProjectName'))]"
+					],
+					"properties": {
+						"cors": {
+							"allowedOrigins": "[parameters('allowedOrigins')]"
+						}
 					}
 				}
 			]
