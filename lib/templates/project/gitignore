@@ -36,3 +36,4 @@ node_modules
 local.env
 cloud.env
 admin.env
+lib/node_modules
