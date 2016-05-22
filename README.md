@@ -1,19 +1,13 @@
-# Funcy Azure - The Azure Functions Application Framework
+# Funcy Azure
 [![npm version](https://badge.fury.io/js/funcy-azure.svg)](https://badge.fury.io/js/funcy-azure)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)]()
 
 ![alt text](https://azurenewsexplorer.blob.core.windows.net/funcyazure/funcyazure-logo.png)
 
 Funcy Azure is the application framework for building web, 
-mobile, IoT and event-based applications on [Azure Functions](https://functions.azure.com). 
-It is a command line interface that helps you structure, build, test and deploy 
+mobile, IoT and event-based applications exclusively on [Azure Functions](https://functions.azure.com). 
+It is a command line interface that helps you structure, build, test, provision and deploy 
 applications built with Azure Functions. Functionality is also extensible via Plugins.
-
-##Table of Contents
-* [Features](#features)
-* [Documentation](#documentation)
-* [Quickstart](#quickstart)
-* [Notes](#notes)
 
 ##Features
 * Run and test Azure Functions (Node.js) locally on your machine
@@ -52,4 +46,4 @@ faz project provision
 To get an overview of all available commands and options simply type `faz --help`
 
 ##Notes
-* This project is in a very early state so please expect a lot of (breaking) changes and additional features in the near future. 
+* This project is in a very early state so please expect a lot of (breaking) changes and additional features in the near future.
