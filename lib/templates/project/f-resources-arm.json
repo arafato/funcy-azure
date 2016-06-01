@@ -20,6 +20,9 @@
 		"repoUrl": {
 			"type": "string"
 		},
+		"scmType": {
+			"type": "string"
+		},
 		"containerSize": {
 			"type": "int"
 		},
@@ -119,7 +122,8 @@
 					"properties": {
 						"cors": {
 							"allowedOrigins": "[parameters('allowedOrigins')]"
-						}
+						},
+						"scmType": "[parameters('scmType')]" 
 					}
 				}
 			]
