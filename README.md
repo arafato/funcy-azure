@@ -19,7 +19,7 @@ applications built with Azure Functions. Functionality is also extensible via Pl
 * 100% extensible - Extend the framework and its operations via plugins. 
 
 ##Documentation
-Please see [https://funcy-azure.readme.io/](https://funcy-azure.readme.io/) for detailed documentation.
+Please see [https://funcy-azure.readme.io/](https://funcy-azure.readme.io/) for detailed documentation and tutorials.
 
 ##Quickstart
 Install the Funcy Azure framework via npm: (requires Node V4)
@@ -44,6 +44,10 @@ Provisioning of resources to Azure (type --help for available options)
 faz project provision 
 ```
 To get an overview of all available commands and options simply type `faz --help`
+
+##Links
+* [Documentation](https://funcy-azure.readme.io/)
+* [Twitter](https://twitter.com/FuncyAzure)
 
 ##Notes
 * This project is in a very early state so please expect a lot of (breaking) changes and additional features in the near future.
