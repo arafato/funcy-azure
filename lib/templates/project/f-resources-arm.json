@@ -16,11 +16,11 @@
 		"fazProjectName": {
 			"type": "string"
 		},
+		"fazStorageAccountName": {
+			"type": "string"
+		},
 		"allowedOrigins": {
 			"type": "array"
-		},
-		"envVars": {
-			"type": "object"
 		},
 		"repoUrl": {
 			"type": "string"
@@ -37,7 +37,7 @@
 		}
 	},
 	"variables": {
-		"storageAccountName": "[toLower(parameters('fazProjectName'))]",
+		"storageAccountName": "[toLower(parameters('fazStorageAccountName'))]",
 		"storageAccountType": "Standard_LRS",
 		"storageAccountid": "[concat(resourceGroup().id,'/providers/','Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]"
 	},
@@ -106,7 +106,14 @@
 					"dependsOn": [
 						"[resourceId('Microsoft.Web/Sites', parameters('fazProjectName'))]"
 					],
-					"properties": "[parameters('envVars')]"
+					"properties": {
+						"AzureWebJobsStorage": "[concat('DefaultEndpointsProtocol=https;AccountName=', variables('storageAccountName'), ';AccountKey=', listKeys(variables('storageAccountid'),'2015-05-01-preview').key1)]",
+						"AzureWebJobsDashboard": "[concat('DefaultEndpointsProtocol=https;AccountName=', variables('storageAccountName'), ';AccountKey=', listKeys(variables('storageAccountid'),'2015-05-01-preview').key1)]",
+						"WEBSITE_CONTENTAZUREFILECONNECTIONSTRING": "[concat('DefaultEndpointsProtocol=https;AccountName=', variables('storageAccountName'), ';AccountKey=', listKeys(variables('storageAccountid'),'2015-05-01-preview').key1)]",
+						"AZUREJOBS_EXTENSION_VERSION": "beta",
+						"FUNCTIONS_EXTENSION_VERSION": "~0.2",
+						"SCM_REPOSITORY_PATH": "wwwroot"
+					}
 				},
 				{
 					"apiVersion": "2015-08-01",

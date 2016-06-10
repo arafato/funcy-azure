@@ -1,0 +1,17 @@
+{
+    "bindings": {
+        "req": {
+            "originalUrl": "https://localhost",
+            "method": "GET",
+            "query": {
+                "name": "Funcy Azure"   
+            },
+            "headers": {
+
+            },
+            "body": {
+                "name": "Funcy Azure (Body)"
+            }
+        }
+    }
+}
