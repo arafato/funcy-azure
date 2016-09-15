@@ -111,7 +111,7 @@
 						"AzureWebJobsDashboard": "[concat('DefaultEndpointsProtocol=https;AccountName=', variables('storageAccountName'), ';AccountKey=', listKeys(variables('storageAccountid'),'2015-05-01-preview').key1)]",
 						"WEBSITE_CONTENTAZUREFILECONNECTIONSTRING": "[concat('DefaultEndpointsProtocol=https;AccountName=', variables('storageAccountName'), ';AccountKey=', listKeys(variables('storageAccountid'),'2015-05-01-preview').key1)]",
 						"AZUREJOBS_EXTENSION_VERSION": "beta",
-						"FUNCTIONS_EXTENSION_VERSION": "~0.2",
+						"FUNCTIONS_EXTENSION_VERSION": "~0.5",
 						"SCM_REPOSITORY_PATH": "wwwroot"
 					}
 				},
